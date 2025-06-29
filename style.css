@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: #f94d4d; */
+}
+body{
+    background: linear-gradient(to right, #4d8ff9, #dc4df9);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    padding-top: 10%;
+}
+.form{
+    width: 400px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form h2{
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.inputFields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.btn-align{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+.btn{
+    width: 5rem;
+    padding: 8px;
+    color: white;
+    border: 1px solid transparent ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#buyButton{
+    background: rgb(61, 255, 47);
+    border-color: #333;
+
+}
+#sellButton{
+    background: rgb(255, 70, 70);
+    border-color: #333;
+
+}
+
+input[type="number"]{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #544d4d;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.outputFields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+.message{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding-top: 20px;
+    align-items:center;
+    gap: 10px;
+    /* color: #333;/ */
+    font-size: 1rem;
+    /* margin-bottom: 10px; */
+}
+.target, .sl{
+    /* width: 1%; */
+    padding: 5px;
+    border: 1px solid #544d4d;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.target{
+    color: black;
+        background-color: rgba(166, 255, 83, 0.4);
+
+}
+.sl{
+    color: black;
+        background-color: rgba(255, 125, 125, 0.4);
+
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .form {
+        width: 95vw;
+        height: auto;
+        padding: 10px;
+    }
+    .form h2 {
+        font-size: 1.2rem;
+    }
+    .btn-align {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .inputFields, .outputFields {
+        gap: 5px;
+    }
+    .target, .sl {
+        font-size: 0.95rem;
+        padding: 8px;
+        margin-top: 5px;
+    }
+    body {
+        padding-top: 5%;
+    }
+}
+
+@media (max-width: 400px) {
+    .form {
+        width: 100vw;
+        min-width: unset;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .form h2 {
+        font-size: 1rem;
+    }
+}
+

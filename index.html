@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h2>Enter price </h2>
+        <div class="inputFields">
+            <div>
+                <label for="price">price:</label>
+                <input type="number" id="price" step="0.01" min="0" >
+            </div>
+            <div class="btn-align">
+                <button id="buyButton" class="btn">BUY</button>
+                <button id="sellButton" class="btn">SELL</button>
+            </div>
+        </div>
+        <div class="outputFields">
+            <div id="showPrice" class="showPrice"></div>
+            <div class="message">
+                <div id="target" class="target"></div>
+                <div id="sl" class="sl"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
