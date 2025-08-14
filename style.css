@@ -94,6 +94,7 @@ input[type="number"]{
     border-radius: 5px;
     font-size: 1rem;
     margin-top: 10px;
+    display:none;
 }
 .target{
     color: black;
@@ -149,4 +150,5 @@ input[type="number"]{
         font-size: 1rem;
     }
 }
+
 
